@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>박우찬 웹사이트</title>
+</head>
+<style>
+
+</style>
+<body>
+  <form action="search.php" method="post" autocomplete="off">
+      <fieldset>
+        <legend>로그인정보</legend>
+        <label for="name">아이디</label>
+        <input type="text" id="id" size="10" maxlength="7">
+        <label for="name">비밀번호</label>
+        <input type="password" id="pwd" size="25">
+        <input type="submit" value="제출">
+        <input type="hidden" name="chk" value="yes">
+        <br />
+        <input type="search">
+        <input type="url">
+        <input type="number" min="6" max="10" value="7">
+        <label>나이<input type="range" min="1" max="100" value="50"></label>
+        <input type="color" value="#70f6ee"></input>
+        <label><input type="radio" name="subject" value="com">com</label>
+        <label><input type="radio" name="subject" value="com1">com1</label>
+        <br />
+        <label><input type="checkbox" name="cb" value="com">com</label>
+        <label><input type="checkbox" name="cb" value="com">com1</label>
+        <br />
+        <input type="date" value="2020-04-12"></input>
+        <input type="button" value="새탭 열기" onclick="window.open()">
+        <input type="file">
+
+        <input type="submit" value="제출">
+      </fieldset>
+
+      <select size="5" multiple>
+          <option value="S">학생</option>
+          <option value="T">교사</option>
+          <option value="D">생활관 교사</option>
+      </select>
+
+      <input type="text" list="choice">
+      <datalist id="choice">
+          <option value="S" label="학생"></option>
+          <option value="T" label="선생님"></option>
+          <option value="D" label="생활관선생님"></option>
+          <option value="O" label="손님"></option>
+      </datalist>
+      <P><label>진행률</label><progress value="50" max="100"></progress></P>
+  </form>
+</body>
+</html>
